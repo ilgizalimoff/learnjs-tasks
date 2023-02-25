@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let messages = [
+            { text: "Hello", from: "John" },
+            { text: "How goes?", from: "John" },
+            { text: "See you soon", from: "Alice" }
+        ];
+
+        let readMap = new WeakMap()
+
+        readMap.set(messages[2], new Date(1999, 10, 21))
+
+        alert("Прочитано ли первое сообщение?: " + readMap.has(messages[0])); // false        
+        alert("Прочитано ли второе сообщение?: " + readMap.has(messages[1])); // false        
+        alert("Прочитано ли третье сообщение?: " + readMap.has(messages[2])); // true  
+    </script>
+</body>
+
+</html>

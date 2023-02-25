@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getSecondsToTomorrow() {
+            let date = new Date()
+            let hours = date.getHours()
+            let minuts = date.getMinutes()
+            let seconds = date.getSeconds()
+            let dayOfSeconds = 24 * 60 * 60
+            let result = dayOfSeconds - (seconds + minuts * 60 + hours * 60 * 60)
+            alert(result)
+            return result
+        }
+        getSecondsToTomorrow()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["Яблоки", "Груша", "Апельсин"];
+
+        // добавляем новое значение в "копию"
+        let shoppingCart = fruits;
+        shoppingCart.push("Банан");
+
+        // что в fruits?
+        alert(fruits.length); // 4, так как массивы в js это объекты и 
+        // shoppingCart и fruits ссылаются на одну область памяти
+    </script>
+</body>
+
+</html>

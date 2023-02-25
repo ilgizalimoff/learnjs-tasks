@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let calculator = {
+            read() {
+                this.first = +prompt('Введите первое число')
+                this.second = +prompt('Введите второе число')
+            },
+            sum() {
+                return this.first + this.second
+            },
+            mul() {
+                return this.first * this.second
+            }
+        };
+
+        calculator.read();
+        alert(calculator.sum());
+        alert(calculator.mul());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function pow(x, n) {
+            let tmp = x;
+
+            for (let i = 1; i < n; i++) {
+                tmp = tmp * x;
+            }
+
+            return tmp;
+        }
+
+        let x = +prompt("Введите x");
+        let n = +prompt("Введите n?");
+
+        if (n < 1) {
+            alert('Степень введена неверно, повторие ввод ');
+        } else {
+            alert(pow(x, n));
+        }
+    </script>
+</body>
+
+</html>

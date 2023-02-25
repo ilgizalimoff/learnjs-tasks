@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function truncate(str, maxlength) {
+            if(str.length > maxlength){
+                str = str.slice(0, maxlength - 1) + '…'
+                alert(str)
+            } else{
+                alert(str)
+            }
+        }
+        truncate("Вот, что мне хотелось бы сказать на эту тему:", 20)
+    </script>
+</body>
+
+</html>

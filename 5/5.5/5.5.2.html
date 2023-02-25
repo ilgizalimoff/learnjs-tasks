@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function filterRange(arr, a, b) {
+            let newArr = []
+            arr.forEach(element => {
+                element >= a && element <= b
+                    ? newArr.push(element) : element
+            })
+            return newArr
+        }
+
+        let arr = [5, 3, 8, 1];
+        let filtered = filterRange(arr, 1, 4);
+
+        alert(filtered); // 3,1 (совпадающие значения)
+
+        alert(arr); // 5,3,8,1 (без изменений)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let object = {
+            num: 1
+        }
+
+        function A() { return object }
+        function B() { return object }
+
+        let a = new A();
+        let b = new B();
+
+        alert(a == b); // true
+    </script>
+</body>
+
+</html>

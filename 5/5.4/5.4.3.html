@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ["a", "b"];
+
+        arr.push(function () {
+            alert(this);
+        });
+
+        arr[2](); // a,b,function () {alert(this);}
+        
+        //arr это объект и в 14 строке this это массив arr с 2 элементами + добавленная функция
+    </script>
+</body>
+
+</html>

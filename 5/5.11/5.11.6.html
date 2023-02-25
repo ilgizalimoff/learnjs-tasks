@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getSecondsToday() {
+            let date = new Date()
+            let hours = date.getHours()
+            let minuts = date.getMinutes()
+            let seconds = date.getSeconds()
+            let result = seconds + minuts * 60 + hours * 60 * 60
+            alert(result)
+            return result
+        }
+        getSecondsToday()
+    </script>
+</body>
+
+</html>

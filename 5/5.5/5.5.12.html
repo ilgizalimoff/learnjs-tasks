@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function unique(arr) {
+            let obj = {}
+            let newArr = []
+            arr.forEach(element => {
+                obj[element] ? obj[element] += 1 : obj[element] = 1
+            });
+            for (key in obj) {
+                newArr.push(key)
+            }
+            return newArr
+        }
+
+        let strings = ["кришна", "кришна", "харе", "харе",
+            "харе", "харе", "кришна", "кришна", ":-O"
+        ];
+
+        alert(unique(strings)); // кришна, харе, :-O
+    </script>
+</body>
+
+</html>
