@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumTo1(n) {
+            let result = 0
+            for (let i = 0; i <= n; i++) {
+                result += i
+            }
+            return result
+        }
+
+        function sumTo2(n) {
+            return (n == 1) ? n : n += sumTo(n - 1)
+        }
+
+        function sumTo3(n) {
+            return (1 + n) / 2 * n
+        }
+
+        alert(sumTo1(100)); // 5050
+        alert(sumTo2(100)); // 5050
+        alert(sumTo3(100)); // 5050
+
+        //самый быстрый решение по формуле, самый медленный рекурсия
+
+        //в документации сказано что для большинства движков вызов 
+        //100000 будет проблематично, поэтому скорее всего будет ошибка  
+    </script>
+</body>
+
+</html>
