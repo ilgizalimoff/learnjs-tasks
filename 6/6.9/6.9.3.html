@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function debounce(f, ms) {
+            let isCooldown = false
+            return function () {
+                if (isCooldown) return
+                f.apply(this, arguments)
+                isCooldown = true
+                setTimeout(() => isCooldown = false, ms)
+            }
+        }
+    </script>
+</body>
+
+</html>

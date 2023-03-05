@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Counter(number) {
+            this.count = number++
+        }
+
+        let count = new Counter(1);
+        let count2 = new count.constructor(5)
+
+        alert(count2.count) // 5
+
+        Counter.prototype = {}
+        
+        let count3 = new Counter(1);
+        let count4 = new count3.constructor(5)
+        alert(count4.count) // 5
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function f() {
+            alert(this.name);
+        }
+
+        f = f.bind({ name: "Вася" }).bind({ name: "Петя" });
+
+        f(); // Вася
+    </script>
+</body>
+
+</html>

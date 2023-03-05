@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function f() {
+            alert(this); // null
+        }
+
+        let user = {
+            g: f.bind(null)
+        };
+
+        user.g();
+    </script>
+</body>
+
+</html>
